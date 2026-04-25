@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: #f5e6df;
+  color: #1a1a1a;
+}
+
+.container {
+  padding: 30px;
+}
+
+/* Navbar */
+.navbar {
+  background: #e7b3a3;
+  padding: 18px 30px;
+  border-radius: 16px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+/* Card */
+.card {
+  background: #e7b3a3;
+  border-radius: 22px;
+  padding: 80px 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+/* Subtle decorative element */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border: 2px dashed rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+/* Typography */
+.coming {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.coming span {
+  font-style: italic;
+}
+
+.tagline {
+  margin-top: 12px;
+  font-size: 16px;
+  opacity: 0.75;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .coming {
+    font-size: 40px;
+  }
+}
